@@ -1,0 +1,4 @@
+{"titulo": "Caso 05 — Celulares: chamadas, agendas e sequências (dados sintéticos)",
+ "reportagens": ["reportagem_1.txt"],
+ "chamadas": "chamadas.csv",
+ "agendas": [{"arquivo": "agenda_jonas.csv", "dono": "Jonas Ribeiro Batista"}, {"arquivo": "agenda_tiago.vcf", "dono": "Tiago Mendes Faria"}]}

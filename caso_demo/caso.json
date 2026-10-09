@@ -1,0 +1,5 @@
+{"titulo": "Demonstração — licitação de frota (dados sintéticos)",
+ "reportagens": ["reportagem_1.txt", "reportagem_2.txt", "reportagem_3.txt"],
+ "oficial": "registros_oficiais_demo.csv",
+ "chamadas": "chamadas_demo.csv",
+ "agendas": [{"arquivo": "agenda_marina.vcf", "dono": "Marina Duarte Lopes"}, {"arquivo": "agenda_ricardo.csv", "dono": "Ricardo Tavares Neto"}]}

@@ -1,0 +1,3 @@
+{"titulo": "Caso 06 — Fontes que se contradizem (dados sintéticos)",
+ "reportagens": ["reportagem_1.txt", "reportagem_2.txt"],
+ "oficial": "registros_oficiais.csv"}

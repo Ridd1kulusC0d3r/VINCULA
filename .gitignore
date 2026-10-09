@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+caso_demo/mapa_demo.html
+casos/*/mapa.html
