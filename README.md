@@ -19,7 +19,7 @@ Leigos: dois cliques em `INICIAR-Windows.bat`, `INICIAR-Mac.command` ou `INICIAR
 - Exporta **STIX 2.1**, GraphML, CSV, Mermaid; análise idêntica em Python e no mapa HTML offline.
 
 ## Treino e testes
-`docs/GUIA-PRATICO.md` traz 8 exercícios com gabarito (`casos/`). `python -m unittest discover -s tests -v` roda 51 testes; `tests/e2e_navegador.py` (requer Playwright + Chromium) valida o mapa no navegador.
+`GUIA-PRATICO.md` traz 8 exercícios com gabarito (`casos/`). `python testar.py` roda diagnóstico + 51 testes (`--e2e` inclui o navegador); `tests/e2e_navegador.py` (requer Playwright + Chromium) valida o mapa no navegador.
 
 ## Aviso
 Alertas são indícios, não conclusões. Dados dos casos são sintéticos. Use apenas fontes abertas e respeite a LGPD. Sem licença definida — escolha uma antes de abrir o uso a terceiros.

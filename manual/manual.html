@@ -40,7 +40,7 @@ footer{max-width:1080px;margin:0 auto;padding:10px 20px 50px;color:var(--mu);fon
 <div class="wrap">
 <nav class="toc" id="toc"><b>Começar</b><a href="#s1">1 · O que é</a><a href="#s2">2 · Como funciona</a><a href="#s3">3 · Instalação</a><a href="#s4">4 · Primeiro uso (demo)</a>
 <b>Usar</b><a href="#s5">5 · Seus dados</a><a href="#s6">6 · Lendo o mapa</a><a href="#s7">7 · Os superpoderes</a><a href="#s8">8 · Editar, exportar, relatar</a>
-<b>Cuidados</b><a href="#s9">9 · Ética e LGPD</a><a href="#s10">10 · Problemas comuns</a><a href="#s11">11 · Glossário</a><b>Para técnicos</b><a href="#s12">12 · Seção técnica</a></nav>
+<b>Cuidados</b><a href="#s9">9 · Ética e LGPD</a><a href="#s10">10 · Problemas comuns</a><a href="#s11">11 · Glossário</a><b>Para técnicos</b><a href="#s12">12 · Seção técnica</a><a href="#s13">13 · Laboratório prático</a></nav>
 <main>
 <section id="s1"><h2><span class="n">1</span>O que é o VINCULA 2.1</h2>
 <p class="lead">Você entrega <b>reportagens</b>, <b>registros oficiais</b>, um <b>registro de chamadas</b> e/ou <b>agendas de aparelhos</b>. O VINCULA monta um mapa de quem se liga a quem e, além de desenhar, <b>analisa</b>: separa grupos, mostra quem faz ponte entre eles, traça o caminho entre duas pessoas, conta a história no tempo e avisa quando algo não bate.</p>
@@ -298,6 +298,16 @@ python vincula.py verificar caso_demo/mapa_demo.html</pre>
 <li>Conectores oficiais (CNPJ/QSA via BrasilAPI ou dados abertos da Receita) gerando linhas “Oficial” com fonte e data.</li>
 <li>Importar STIX em OpenCTI/MISP para cruzar com indicadores de ameaça.</li>
 <li>Arquivamento automático das matérias (Wayback) com hash na cadeia de custódia.</li></ul></section>
+<section id="s13"><h2><span class="n">13</span>Laboratório prático (2.1)</h2>
+<p>Seis casos sintéticos na pasta <code>casos/</code> para treinar com gabarito. Antes de começar, rode <code>python vincula.py diagnostico</code>: deve terminar com “Tudo certo”. Depois, para cada caso: <code>python vincula.py caso casos/NOME</code> e compare o resumo com a tabela.</p>
+<table><thead><tr><th>Caso</th><th>Resultado esperado</th><th>O que procurar</th><th>Armadilha</th></tr></thead><tbody>
+<tr><td>demo</td><td>25 · 60 · 6</td><td>parentesco, contradição de saída, sinal de tempo</td><td>parente ≠ sócio</td></tr>
+<tr><td>02 laranja e fachada</td><td>11 · 21 · 3</td><td>endereço liga 5 partes; CNPJ inválido; telefone com dois titulares</td><td>“Rio Claro” fica a revisar</td></tr>
+<tr><td>03 cartel</td><td>9 · 22 · 4</td><td>parentes em concorrentes; e-mail único em 4 propostas</td><td>sobreposição não é prova</td></tr>
+<tr><td>04 homônimos e filiais</td><td>9 · 19 · 1</td><td>duas “Santa Clara” não fundem; raiz 55030001</td><td>nome igual ≠ mesma entidade</td></tr>
+<tr><td>05 celulares</td><td>8 · 16 · 0</td><td>números sequenciais, apelidos, contatos em comum, DDDs</td><td>0 cruzamentos ≠ 0 relação</td></tr>
+<tr><td>06 contradições</td><td>6 · 6 · 1</td><td>4 contradições entre fontes</td><td>não diz quem está certo</td></tr></tbody></table>
+<p>Os gabaritos são conferidos automaticamente (<code>python -m unittest discover -s tests</code>). Roteiro completo com exercícios: <code>GUIA-PRATICO.md</code> no repositório.</p></section>
 </main></div>
 <footer>VINCULA 2.1 — manual ilustrado. Capturas de tela reais da ferramenta, geradas em teste automatizado com o caso demo (dados fictícios). Desenhos esquemáticos de instalação são ilustrações, não capturas.</footer>
 <script>

@@ -45,4 +45,4 @@ Tudo roda no seu computador, só com o Python.
 Chamadas e agendas de terceiros exigem base legal (ordem judicial, consentimento ou aparelho próprio).
 Dados pessoais aparecem **mascarados** por padrão. Trate tudo conforme a LGPD.
 
-Veja também `docs/GUIA-PRATICO.md` (8 exercícios com gabarito) e rode `python vincula.py diagnostico` se algo não abrir.
+Veja também `GUIA-PRATICO.md` (8 exercícios com gabarito) e rode `python vincula.py diagnostico` se algo não abrir.
